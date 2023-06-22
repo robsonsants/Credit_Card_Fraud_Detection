@@ -1,0 +1,74 @@
+{'retrieve_transaction_features': 0.3507108688354492, 'fraud_detection_service': 3.995016574859619}
+{'retrieve_transaction_features': 0.13937044143676758, 'fraud_detection_service': 1.8395156860351562, 'authorize_transaction_service': 0.003933429718017578}
+{'retrieve_transaction_features': 0.17515325546264648, 'fraud_detection_service': 0.8074133396148682}
+{'retrieve_transaction_features': 0.16898727416992188, 'fraud_detection_service': 0.8331525325775146, 'authorize_transaction_service': 0.00424957275390625}
+{'retrieve_transaction_features': 0.1998748779296875, 'fraud_detection_service': 0.834226131439209}
+{'retrieve_transaction_features': 0.11382818222045898, 'fraud_detection_service': 0.7750508785247803, 'authorize_transaction_service': 0.004054069519042969}
+{'retrieve_transaction_features': 0.16665911674499512, 'fraud_detection_service': 0.7840631008148193, 'authorize_transaction_service': 0.003363370895385742}
+{'retrieve_transaction_features': 0.02848029136657715, 'fraud_detection_service': 0.9256601333618164, 'authorize_transaction_service': 0.003739595413208008}
+{'retrieve_transaction_features': 0.18346524238586426, 'fraud_detection_service': 0.809049129486084}
+{'retrieve_transaction_features': 0.17725181579589844, 'fraud_detection_service': 0.7738885879516602}
+{'retrieve_transaction_features': 0.16730856895446777, 'fraud_detection_service': 0.7965061664581299}
+{'retrieve_transaction_features': 0.17740178108215332, 'fraud_detection_service': 0.8159058094024658}
+{'retrieve_transaction_features': 0.12427163124084473, 'fraud_detection_service': 0.95367431640625, 'authorize_transaction_service': 0.004113912582397461}
+{'retrieve_transaction_features': 0.03860592842102051, 'fraud_detection_service': 0.8192558288574219, 'authorize_transaction_service': 0.003157377243041992}
+{'retrieve_transaction_features': 0.05019664764404297, 'fraud_detection_service': 0.9308867454528809, 'authorize_transaction_service': 0.00406336784362793}
+{'retrieve_transaction_features': 0.17937445640563965, 'fraud_detection_service': 0.8002047538757324}
+{'retrieve_transaction_features': 0.1047523021697998, 'fraud_detection_service': 0.8774785995483398, 'authorize_transaction_service': 0.003071308135986328}
+{'retrieve_transaction_features': 0.20223593711853027, 'fraud_detection_service': 1.0489342212677002}
+{'retrieve_transaction_features': 0.10299825668334961, 'fraud_detection_service': 0.8559153079986572, 'authorize_transaction_service': 0.0036058425903320312}
+{'retrieve_transaction_features': 0.17490673065185547, 'fraud_detection_service': 0.8222594261169434}
+{'retrieve_transaction_features': 0.03913736343383789, 'fraud_detection_service': 0.8108444213867188, 'authorize_transaction_service': 0.003252744674682617}
+{'retrieve_transaction_features': 0.19304203987121582, 'fraud_detection_service': 0.8127303123474121}
+{'retrieve_transaction_features': 0.09038972854614258, 'fraud_detection_service': 0.8303794860839844, 'authorize_transaction_service': 0.0036749839782714844}
+{'retrieve_transaction_features': 0.17559361457824707, 'fraud_detection_service': 0.854302167892456}
+{'retrieve_transaction_features': 0.12857484817504883, 'fraud_detection_service': 0.9757747650146484, 'authorize_transaction_service': 0.003907680511474609}
+{'retrieve_transaction_features': 0.06856083869934082, 'fraud_detection_service': 0.960106611251831, 'authorize_transaction_service': 0.0040433406829833984}
+{'retrieve_transaction_features': 0.1835167407989502, 'fraud_detection_service': 1.0292491912841797, 'authorize_transaction_service': 0.004400968551635742}
+{'retrieve_transaction_features': 0.17687535285949707, 'fraud_detection_service': 0.9047298431396484, 'authorize_transaction_service': 0.0038099288940429688}
+{'retrieve_transaction_features': 0.23778748512268066, 'fraud_detection_service': 0.9137842655181885}
+{'retrieve_transaction_features': 0.005490541458129883, 'fraud_detection_service': 0.8040716648101807, 'authorize_transaction_service': 0.003699779510498047}
+{'retrieve_transaction_features': 0.1467432975769043, 'fraud_detection_service': 0.792661190032959, 'authorize_transaction_service': 0.003442049026489258}
+{'retrieve_transaction_features': 0.18144917488098145, 'fraud_detection_service': 0.8453803062438965}
+{'retrieve_transaction_features': 0.18062973022460938, 'fraud_detection_service': 0.8165068626403809}
+{'retrieve_transaction_features': 0.17947936058044434, 'fraud_detection_service': 0.9252769947052002}
+{'retrieve_transaction_features': 0.20627617835998535, 'fraud_detection_service': 0.8021228313446045}
+{'retrieve_transaction_features': 0.11489295959472656, 'fraud_detection_service': 0.7866313457489014, 'authorize_transaction_service': 0.00370025634765625}
+{'retrieve_transaction_features': 0.07862234115600586, 'fraud_detection_service': 0.851860523223877, 'authorize_transaction_service': 0.0031905174255371094}
+{'retrieve_transaction_features': 0.09608983993530273, 'fraud_detection_service': 0.8677318096160889, 'authorize_transaction_service': 0.003193378448486328}
+{'retrieve_transaction_features': 0.18513941764831543, 'fraud_detection_service': 0.8235607147216797}
+{'retrieve_transaction_features': 0.17742228507995605, 'fraud_detection_service': 0.8254594802856445, 'authorize_transaction_service': 0.0040819644927978516}
+{'retrieve_transaction_features': 0.17470932006835938, 'fraud_detection_service': 0.8288929462432861}
+{'retrieve_transaction_features': 0.04326343536376953, 'fraud_detection_service': 0.845320463180542, 'authorize_transaction_service': 0.003347158432006836}
+{'retrieve_transaction_features': 0.08341574668884277, 'fraud_detection_service': 0.8608663082122803, 'authorize_transaction_service': 0.003862142562866211}
+{'retrieve_transaction_features': 0.08657717704772949, 'fraud_detection_service': 0.8765490055084229, 'authorize_transaction_service': 0.00379180908203125}
+{'retrieve_transaction_features': 0.18529391288757324, 'fraud_detection_service': 0.8063762187957764}
+{'retrieve_transaction_features': 0.17575716972351074, 'fraud_detection_service': 0.8616921901702881}
+{'retrieve_transaction_features': 0.17215228080749512, 'fraud_detection_service': 0.8520870208740234}
+{'retrieve_transaction_features': 0.17673277854919434, 'fraud_detection_service': 0.8393101692199707}
+{'retrieve_transaction_features': 0.17846894264221191, 'fraud_detection_service': 0.823293924331665}
+{'retrieve_transaction_features': 0.18250656127929688, 'fraud_detection_service': 0.8765277862548828}
+{'retrieve_transaction_features': 0.10304665565490723, 'fraud_detection_service': 0.8574159145355225, 'authorize_transaction_service': 0.004618644714355469}
+{'retrieve_transaction_features': 0.17730474472045898, 'fraud_detection_service': 0.825875997543335}
+{'retrieve_transaction_features': 0.17810726165771484, 'fraud_detection_service': 0.8308730125427246}
+{'retrieve_transaction_features': 0.03180980682373047, 'fraud_detection_service': 0.8660633563995361, 'authorize_transaction_service': 0.0034837722778320312}
+{'retrieve_transaction_features': 0.08849453926086426, 'fraud_detection_service': 0.8936896324157715, 'authorize_transaction_service': 0.004139900207519531}
+{'retrieve_transaction_features': 0.1737051010131836, 'fraud_detection_service': 0.8272509574890137}
+{'retrieve_transaction_features': 0.1917860507965088, 'fraud_detection_service': 0.803250789642334}
+{'retrieve_transaction_features': 0.0212094783782959, 'fraud_detection_service': 0.7829957008361816, 'authorize_transaction_service': 0.0036194324493408203}
+{'retrieve_transaction_features': 0.1444704532623291, 'fraud_detection_service': 0.8121047019958496, 'authorize_transaction_service': 0.0033142566680908203}
+{'retrieve_transaction_features': 0.17142581939697266, 'fraud_detection_service': 0.7931320667266846}
+{'retrieve_transaction_features': 0.17522025108337402, 'fraud_detection_service': 0.8260257244110107}
+{'retrieve_transaction_features': 0.02913188934326172, 'fraud_detection_service': 0.795473575592041, 'authorize_transaction_service': 0.003366708755493164}
+{'retrieve_transaction_features': 0.1534709930419922, 'fraud_detection_service': 1.1874160766601562, 'authorize_transaction_service': 0.0030269622802734375}
+{'retrieve_transaction_features': 0.17541742324829102, 'fraud_detection_service': 1.221454381942749, 'authorize_transaction_service': 0.003187894821166992}
+{'retrieve_transaction_features': 0.11295557022094727, 'fraud_detection_service': 1.598992109298706, 'authorize_transaction_service': 0.0033669471740722656}
+{'retrieve_transaction_features': 0.1379680633544922, 'fraud_detection_service': 0.8684179782867432, 'authorize_transaction_service': 0.003164052963256836}
+{'retrieve_transaction_features': 0.17375779151916504, 'fraud_detection_service': 0.9499948024749756}
+{'retrieve_transaction_features': 0.17967867851257324, 'fraud_detection_service': 1.0944609642028809}
+{'retrieve_transaction_features': 0.16529321670532227, 'fraud_detection_service': 6.705165147781372}
+{'retrieve_transaction_features': 0.186445951461792, 'fraud_detection_service': 1.231428861618042}
+{'retrieve_transaction_features': 0.20515775680541992, 'fraud_detection_service': 0.9708902835845947}
+{'retrieve_transaction_features': 0.19955778121948242, 'fraud_detection_service': 1.0285797119140625}
+{'retrieve_transaction_features': 0.14777731895446777, 'fraud_detection_service': 0.8668715953826904, 'authorize_transaction_service': 0.004041433334350586}
+{'retrieve_transaction_features': 0.175445556640625, 'fraud_detection_service': 1.8126204013824463}
