@@ -3,19 +3,24 @@ from fastapi import FastAPI
 from fastapi import HTTPException
 import pandas as pd
 import requests
-import service1.orchestration as orchestration
+import orchestration as orchestration
+import variables as variables
 #from service1.database import save_transaction
 
 app = FastAPI()
 
 def get_transaction_features(transaction_id: int) -> dict:
     print(f"Retrieving transaction features for ID: {transaction_id}")  # Debug print
-    response = requests.get(f"http://db_service:8003/transaction/{transaction_id}")
+    response = requests.get(f"http://15.229.30.131:8003/transaction/{transaction_id}")
 
     if response.status_code == 200:
         return response.json()
     else:
         raise HTTPException(status_code=404, detail="Transaction not found")
+
+@app.post("/authorize_transaction")
+def authorize_transaction(transaction: variables.TransactionsVariables):
+	return {"message": "Transaction has been authorized.", "status_code": 200}
 
 def save_to_file(times: dict):
     with open('execution_times.txt', 'a') as f:
@@ -48,7 +53,7 @@ def receive_transaction(transaction: orchestration.Transaction):
     print(f"Full transaction data: {full_data}")  # Debug print
 
     # Call Service 4 for fraud detection
-    fraud_detection_url = "http://transaction_service:8004/predict"
+    fraud_detection_url = "http://52.67.74.16:8004/predict"
     start_time = time.time()
     response = requests.post(fraud_detection_url, json=full_data)
     end_time = time.time()
@@ -76,21 +81,21 @@ def receive_transaction(transaction: orchestration.Transaction):
         elif fraud_result == "not fraudulent":
             # Transaction is not fraudulent, continue with the purchase
             # Call Service 3 to authorize the transaction
-            service3_url = "http://db_service:8003/authorize_transaction"
+            #service3_url = "http://db_service:8003/authorize_transaction"
             start_time = time.time()
-            response = requests.post(service3_url, json=full_data)
+            response = authorize_transaction(full_data)
             end_time = time.time()
             execution_times['authorize_transaction_service'] = end_time - start_time
             print(f"Time taken to authorize the transaction:: {execution_times} seconds")
             save_to_file(execution_times)
 
-            if response.status_code == 200:
+            if "status_code" in response and response["status_code"] == 200:
                 # Add debug print to see the response from the transaction authorization service
-                print(f"Transaction authorization response: {response.json()}")
+                print(f"Transaction authorization response: {response}")
                 return {"message": "Transaction successful"}
             else:
                 # Add debug print to see the error from the transaction authorization service
-                print(f"Transaction authorization error: {response.text}")
+                print(f"Transaction authorization error: {response}")
                 raise HTTPException(status_code=500, detail="Failed to authorize transaction")
 
 
