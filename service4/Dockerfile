@@ -15,4 +15,6 @@ RUN pip install -r ./requirements.txt
 
 COPY . .
 
-CMD uvicorn service4.main:app --host 0.0.0.0 --port 8004 --reload
+EXPOSE 8004
+
+CMD uvicorn main:app --host 0.0.0.0 --port 8004 --reload-dir /service4
