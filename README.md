@@ -1,29 +1,24 @@
-### Real-Time Architecture and Machine Learning Model for Credit Card Fraud Detection
-API - Bank Virtual 
+### Data Engineering Project: Detection of anomalies in credit card transactions through an API from a MongoDB database using Machine Learning
 
-### Projeto de Engenharia de Dados: Detecção de anomalias em transações de cartão de crédito através de uma API de um banco de dados MongoDB utilizando Machine Learning
+## Introduction
 
-## Introdução
+Within the scope of activities of a data engineer, making data available or receiving data through an API is a common practice. This API can be consumed by different applications, aligning with the advantages associated with the microservices philosophy. Among others, such as improved security, efficient data abstraction, and maintenance flexibility.
 
-Dentro do escopo de atividades de um engenheiro de dados, a disponibilização ou recebimento de dados por meio de uma API é uma prática comum. Essa API pode ser consumida por diferentes aplicações, alinhando-se com as vantagens associadas à filosofia de microsserviços. Dentre outras como melhoria da segurança, a abstração eficiente de dados, e a flexibilidade de manutenção.
+In this context, this project aims to develop an API capable of detecting anomalies in credit card transactions using machine learning in a MongoDB database hosted in the Amazon Web Services (AWS) Cloud. Throughout development, good Continuous Integration and Continuous Delivery (CI/CD) practices will be incorporated.
 
-Nesse contexto, este projeto tem como objetivo o desenvolvimento de uma API capaz de realizar detecções de anomalias em transações de cartão de crédito utilizando machine learning em um banco de dados MongoDB hospedado na Nuvem da Amazon Web Services (AWS).   
-
-Nesse contexto, este projeto tem como objetivo o desenvolvimento de uma API capaz de realizar operações CRUD (Create, Read, Update, Delete) em um banco de dados MySQL hospedado no Cloud SQL, dentro do ambiente de nuvem da Google (GCP). Ao longo do desenvolvimento, serão incorporadas boas práticas de Integração Contínua e Entrega Contínua (CI/CD). Isso incluirá o provisionamento da infraestrutura como código, utilizando o Terraform, e a implementação de pipelines automatizadas de código. Essas práticas serão integradas ao GitHub, permitindo a execução automática em ambientes de produção ou desenvolvimento sempre que houver mudanças no repositório.
-
-# Tecnologias Utilizadas
-  - MongoDB: Sistema de banco de dados NoSQL orientado a documentos, que oferece flexibilidade e escalabilidade, ideal para lidar com grandes volumes de dados e estruturas de dados variáveis.
-  - FastApi: Framework em Python utilizado para o desenvolvimento da API. Oferece desempenho eficiente e facilidade de desenvolvimento, possibilitando a criação de endpoints eficazes.
-  - Python: Linguagem de programação utilizada no projeto, integrada ao framework FastAPI para a implementação da lógica da API.
-  - Docker: Utilizado para criar imagens com as bibliotecas necessárias que serão empregadas no CloudRun.
-  - Uvicorn: Servidor ASGI leve e rápido para Python, utilizado para hospedar a aplicação FastAPI, proporcionando alto desempenho e capacidade de lidar com conexões assíncronas.
-  - AWS (Amazon Web Services): Utilizada para hospedar aplicações, gerenciar bancos de dados (como o MongoDB), e fornecer recursos computacionais, armazenamento, e outros serviços essenciais para a operação e escalabilidade da sua API e outras componentes do sistema.
-  - Pandas: Biblioteca de Python para manipulação e análise de dados, oferecendo estruturas de dados e ferramentas robustas para manipular tabelas e séries temporais.
-  - Scikit-learn: Biblioteca de Python para aprendizado de máquina, proporcionando uma gama de algoritmos para classificação, regressão, clustering e redução de dimensionalidade.
-  - SciPy: Conjunto de ferramentas de Python para matemática, ciência e engenharia, abrangendo módulos para otimização, álgebra linear, integração, e mais.
-  - Joblib: Biblioteca utilizada para serialização de objetos Python, especialmente útil para salvar e carregar modelos de aprendizado de máquina.
-  - NumPy: Biblioteca fundamental para computação científica em Python, oferecendo suporte a arrays multidimensionais e ferramentas para operações matemáticas complexas.
-  - Pydantic: Biblioteca para validação e gerenciamento de dados em Python, usada especialmente para criar modelos de dados com tipos fortemente tipados.
+# Technologies Used
+   - MongoDB: Document-oriented NoSQL database system that offers flexibility and scalability, ideal for dealing with large volumes of data and variable data structures.
+   - FastApi: Python framework used for API development. It offers efficient performance and ease of development, enabling the creation of effective endpoints.
+   - Python: Programming language used in the project, integrated with the FastAPI framework to implement the API logic.
+   - Docker: Used to create images with the necessary libraries that will be used in CloudRun.
+   - Uvicorn: Lightweight and fast ASGI server for Python, used to host the FastAPI application, providing high performance and the ability to handle asynchronous connections.
+   - AWS (Amazon Web Services): Used to host applications, manage databases (such as MongoDB), and provide computing resources, storage, and other services essential for the operation and scalability of your API and other system components.
+   - Pandas: Python library for data manipulation and analysis, offering robust data structures and tools for manipulating tables and time series.
+   - Scikit-learn: Python library for machine learning, providing a range of algorithms for classification, regression, clustering and dimensionality reduction.
+   - SciPy: Python toolkit for math, science, and engineering, covering modules for optimization, linear algebra, integration, and more.
+   - Joblib: Library used for serialization of Python objects, especially useful for saving and loading machine learning models.
+   - NumPy: Fundamental library for scientific computing in Python, offering support for multidimensional arrays and tools for complex mathematical operations.
+   - Pydantic: Library for data validation and management in Python, used especially to create data models with strongly typed types.
 
 ## Machine Learning Architecture
 
@@ -33,29 +28,29 @@ Nesse contexto, este projeto tem como objetivo o desenvolvimento de uma API capa
 
 ![ap1_vesta](https://github.com/robsonsants/Credit_Card_Fraud_Detection/assets/32533017/ff1a70b4-9bde-4538-8e7e-c10492d2a496)
 
-## Etapas do Projeto
+## Project steps
 
-1. Conjunto de Dados
+1. Dataset
     
-  Este trabalho utiliza o conjunto de dados denominado IEEE-CIS Fraud Detection ´´ https://www.kaggle.com/competitions/ieee-fraud-detection ´´, o qual foi elaborado para possibilitar a construção e a avaliação de sistemas de detecção de fraudes em comércio eletrônico. Esse conjunto de dados é formado por duas tabelas principais: a tabela de transações e a tabela de identidades. Na tabela de transações estão contidas informações cruciais sobre cada transação, incluindo o valor da transação, o cartão de crédito utilizado, a data e a hora da operação, além de outros atributos relevantes. Na tabela de identidades são fornecidos dados adicionais sobre os indivíduos envolvidos nas transações, incluindo características demográficas e informações sobre os dispositivos utilizados pelos usuários.
+   This work uses the dataset called IEEE-CIS Fraud Detection ´´ https://www.kaggle.com/competitions/ieee-fraud-detection ´´, which was designed to enable the construction and evaluation of detection systems of fraud in e-commerce. This dataset is made up of two main tables: the transaction table and the identity table. The transaction table contains crucial information about each transaction, including the transaction amount, the credit card used, the date and time of the transaction, as well as other relevant attributes. The identity table provides additional data about the individuals involved in transactions, including demographic characteristics and information about the devices used by users.
 
-  O conjunto de dados IEEE-CIS Fraud Detection inclui 434 atributos, dos quais 400 são anonimizados (V1 a V339), a fim de proteger a privacidade de usuários e instituições. Cada linha da tabela de transações representa uma determinada transação eletrônica. Cada transação possui um rótulo, o qual pode assumir dois valores indicando: transação legítima ou transação fraudulenta. Neste sentido, o conjunto de dados pode ser utilizado para construir classificadores binários. Como o conjunto de dados é bastante grande e desbalanceado, utilizamos apenas uma parte dos dados, mais precisamente um subconjunto formado pelo train_identity e o train_transaction, formando assim um novo conjunto de dados, o qual será utilizado nas etapas subsequentes deste trabalho.
+   The IEEE-CIS Fraud Detection dataset includes 434 attributes, of which 400 are anonymized (V1 to V339) in order to protect the privacy of users and institutions. Each row in the transaction table represents a specific electronic transaction. Each transaction has a label, which can take on two values indicating: legitimate transaction or fraudulent transaction. In this sense, the dataset can be used to build binary classifiers. As the data set is quite large and unbalanced, we only used a part of the data, more precisely a subset formed by the train_identity and the train_transaction, thus forming a new data set, which will be used in the subsequent stages of this work.
 
-2. Criação da Imagem Docker
+2. Docker Image Creation
 
-   Para facilitar a implementação da API, desenvolveu-se um Dockerfile. Esse documento inclui uma imagem do Python, incorporando todas as bibliotecas essenciais para o projeto, assim como o código-fonte completo da aplicação. Uma vez estabelecido o container, procedeu-se com a execução de um comando para estabelecer um serviço usando Uvicorn em uma porta designada, a qual permite o acesso à API.
-   Utilizamos Docker para garantir um ambiente de execução consistente e repetível. Essa ferramenta permite que o software seja executado de forma confiável em diferentes ambientes, simplificando o desenvolvimento, teste e implantação.
+    To facilitate the implementation of the API, a Dockerfile was developed. This document includes an image of Python, incorporating all essential libraries for the project, as well as the complete source code of the application. Once the container was established, a command was executed to establish a service using Uvicorn on a designated port, which allows access to the API.
+    We use Docker to ensure a consistent and repeatable execution environment. This tool allows software to run reliably in different environments, simplifying development, testing and deployment.
 
-3. Criação das Máquinas na AWS
+3. Creating Machines on AWS
 
-   O sistema foi implementado em instâncias de máquinas virtuais do tipo t2.medium, com 2 vCPUs e 4 GB de RAM, na região de São Paulo da nuvem da Amazon Web Service (AWS). Para cada serviço foi alocada uma máquina virtual, além de uma máquina virtual para o Locust. Cada serviço foi executado em um único container Docker.  
-  Foi dada ênfase especial aos dados mantidos na parte da Vesta, para replicar a funcionalidade de uma aplicação bancária autêntica. A finalidade disso foi garantir a melhor simulação possível de uma aplicação bancária real na execução dos testes.
-  Todos esses elementos trabalham juntos para apoiar a aplicação, permitindo que todo o sistema seja iniciado, parado e gerenciado de maneira conveniente, proporcionando uma alta eficiência e portabilidade.
+    The system was implemented in virtual machine instances of type t2.medium, with 2 vCPUs and 4 GB of RAM, in the São Paulo region of the Amazon Web Service (AWS) cloud. A virtual machine was allocated for each service, in addition to a virtual machine for Locust. Each service ran in a single Docker container.
+   Special emphasis was placed on data held on Vesta's side, to replicate the functionality of an authentic banking application. The purpose of this was to guarantee the best possible simulation of a real banking application when running the tests.
+   All of these elements work together to support the application, allowing the entire system to be started, stopped and managed conveniently, providing high efficiency and portability.
 
-4. Experimentos
-   Para avaliar o desempenho e capacidade máxima de atendimento do sistema, realizamos experimentos utilizando a ferramenta Locust ´´ https://locust.io/ ´´, uma estrutura de teste de carga de código aberto que permite simular ações simultâneas de múltiplos usuários em um serviço web. Durante os experimentos, Locust foi empregado para capturar métricas críticas, tais como o tempo de resposta de cada requisição e o número total de requisições atentidas. Além disso, um registro detalhado foi mantido, incluindo a duração exata que cada serviço levou para processar e concluir uma transação e o consumo de CPU e memória das máquinas virtuais utilizadas. Com isso, foi possível obter uma visão abrangente do desempenho do sistema sob carga, identificando potenciais gargalos e identificando oportunidades de melhorias para trabalhos futuros.
+4. Experiments
+    To evaluate the performance and maximum service capacity of the system, we carried out experiments using the Locust tool ´´ https://locust.io/ ´´, an open source load testing framework that allows you to simulate simultaneous actions of multiple users in one web service. During the experiments, Locust was used to capture critical metrics, such as the response time of each request and the total number of requests served. Additionally, a detailed log was kept, including the exact duration each service took to process and complete a transaction and the CPU and memory consumption of the virtual machines used. This made it possible to obtain a comprehensive view of the system's performance under load, identifying potential bottlenecks and identifying opportunities for improvement for future work.
     
-  A aplicação foi submetida a experimentos que variaram o número de clientes iniciais e a taxa de geração (i.e., quantidade de clientes iniciados por segundo). Foram executados 6 experimentos com configurações diferentes: utilizando 10 clientes e taxa de geração de 5 clientes/s; 20 clientes com taxa de 10 clientes/s, 30 clientes e taxa de 15, 40 clientes e taxa de 20, 50 clientes e taxa de 25 e, por fim, 60 clientes e 30 iniciados por segundo. O tempo de duração do experimento foi mantido em 3 minutos nas 6 configurações.
+   The application was subjected to experiments that varied the number of initial clients and the generation rate (i.e., number of clients started per second). 6 experiments were carried out with different configurations: using 10 clients and a generation rate of 5 clients/s; 20 clients at a rate of 10 clients/s, 30 clients at a rate of 15, 40 clients at a rate of 20, 50 clients at a rate of 25, and finally 60 clients and 30 starts per second. The duration of the experiment was maintained at 3 minutes in the 6 configurations.
 
-  Para questões de análise, foram removidas 10% das requisições iniciais em todos os experimentos por ser uma fase de warm up do sistema.
+   For analysis purposes, 10% of the initial requests were removed in all experiments as it was a system warm-up phase.
 
