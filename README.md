@@ -4,13 +4,13 @@
 
 Within the scope of activities of a data engineer, making data available or receiving data through an API is a common practice. This API can be consumed by different applications, aligning with the advantages associated with the microservices philosophy. Among others, such as improved security, efficient data abstraction, and maintenance flexibility.
 
-In this context, this project aims to develop an API capable of detecting anomalies in credit card transactions using machine learning in a MongoDB database hosted in the Amazon Web Services (AWS) Cloud. Throughout development, good Continuous Integration and Continuous Delivery (CI/CD) practices will be incorporated.
+In this context, this project aims to develop an API capable of detecting anomalies in credit card transactions using machine learning in a MongoDB database hosted in the Cloud of Amazon Web Services (AWS). Throughout development, good Continuous Integration and Continuous Delivery (CI/CD) practices will be incorporated, using Docker containers.
 
 # Technologies Used
    - MongoDB: Document-oriented NoSQL database system that offers flexibility and scalability, ideal for dealing with large volumes of data and variable data structures.
    - FastApi: Python framework used for API development. It offers efficient performance and ease of development, enabling the creation of effective endpoints.
    - Python: Programming language used in the project, integrated with the FastAPI framework to implement the API logic.
-   - Docker: Used to create images with the necessary libraries that will be used in CloudRun.
+   - Docker: Used to create images with the necessary libraries that will be used with Uvicorn.
    - Uvicorn: Lightweight and fast ASGI server for Python, used to host the FastAPI application, providing high performance and the ability to handle asynchronous connections.
    - AWS (Amazon Web Services): Used to host applications, manage databases (such as MongoDB), and provide computing resources, storage, and other services essential for the operation and scalability of your API and other system components.
    - Pandas: Python library for data manipulation and analysis, offering robust data structures and tools for manipulating tables and time series.
