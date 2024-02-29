@@ -1,4 +1,4 @@
-### Data Engineering Project: Detection of anomalies in credit card transactions through an API from a MongoDB database using Machine Learning
+# Data Engineering Project: Detection of anomalies in credit card transactions through an API from a MongoDB database using Machine Learning
 
 ## Introduction
 
