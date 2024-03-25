@@ -54,3 +54,7 @@ In this context, this project aims to develop an API capable of detecting anomal
 
    For analysis purposes, 10% of the initial requests were removed in all experiments as it was a system warm-up phase.
 
+
+### Configuration 
+
+To use the code you need to have the machine learning model trained exported to the .joblib to use in the SERVICE 4 (prediction) and the .json with the features to use on SERVICE 3 (data enricher).
