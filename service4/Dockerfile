@@ -1,6 +1,7 @@
 FROM python:3.8-slim-buster
 
 WORKDIR /service4
+#WORKDIR /app
 
 COPY requirements.txt ./
 
@@ -15,4 +16,7 @@ RUN pip install -r ./requirements.txt
 
 COPY . .
 
+EXPOSE 8004
+
+#CMD uvicorn main:app --host 0.0.0.0 --port 8004 --reload-dir /service4
 CMD uvicorn service4.main:app --host 0.0.0.0 --port 8004 --reload

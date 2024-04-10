@@ -10,4 +10,4 @@ numpy==1.21.6
 pydantic==1.9.1
 httptools
 pymongo
-#xgboost==1.7.5
+xgboost==1.5.2

@@ -16,14 +16,15 @@ def index():
 def predict(data: predictTransactions): 
     data_dict = data.dict()
     features = np.array([list(data_dict.values())])
-    features_dmatrix = DMatrix(features)
+    #features_dmatrix = DMatrix(features)
 
     # Load the model
-    model_xgb = xgboost.Booster()
-    model_xgb.load_model("modelo.bst")
+    #model_xgb = xgboost.Booster()
+    #model_xgb.load_model("xgboost.bst")
+    model = load("xgboost.bst")
 
     # Make predictions
-    predictions = model_xgb.predict(features_dmatrix)
+    predictions = model.predict(features)
     if predictions == 1:
         result = "fraudulent"
     elif predictions == 0:

@@ -30,7 +30,7 @@ class QuickstartUser(HttpUser):
             "P_emaildomain": float(t[7])
         }
         #print(transaction)
-        self.client.post("http://localhost:8001/transactions", json=transaction)
+        self.client.post("http://172.17.0.1:8001/transactions", json=transaction)
         #print(f"Response status: {response.status_code}, content: {response.text}")
         
         #print(f"About to post transaction: {transaction}")

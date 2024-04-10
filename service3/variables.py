@@ -26,3 +26,13 @@ class TransactionsVariables(BaseModel):
     hour: int
     day: int
     dow: int
+
+class ClientTransactionInfo(BaseModel):
+    TransactionID: int
+    TransactionAmt: float
+    card1: int
+    card2: int
+    card5: int
+    card6: int
+    addr1: float
+    P_emaildomain: float
