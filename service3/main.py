@@ -5,8 +5,7 @@ from fastapi import FastAPI, HTTPException, Request
 from pymongo import MongoClient
 from fastapi.encoders import jsonable_encoder
 from bson import ObjectId
-from variables import TransactionsVariables
-
+from service3.variables import TransactionsVariables
 
 #from sqlalchemy import create_engine
 #from sqlalchemy.orm import sessionmaker
@@ -73,3 +72,5 @@ def authorize_transaction(transaction: TransactionsVariables):
 #    transaction_ids = [transaction["TransactionID"] for transaction in transactions]
 
 #    return transaction_ids
+
+    return transaction_ids
