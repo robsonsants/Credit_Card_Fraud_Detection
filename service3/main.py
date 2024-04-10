@@ -5,8 +5,7 @@ from fastapi import FastAPI, HTTPException, Request
 from pymongo import MongoClient
 from fastapi.encoders import jsonable_encoder
 from bson import ObjectId
-#from variables import TransactionsVariables
-from service3.variables import TransactionsVariables
+from variables import TransactionsVariables
 
 
 #from sqlalchemy import create_engine
@@ -32,22 +31,22 @@ class JSONEncoder(json.JSONEncoder):
 transactions_dict = {}
 
 def load_transactions():
-	global transactions_dict
-	with open('data_features_rf.json', 'r') as f:
-		transactions = json.load(f)
-	for transaction in transactions:
-		transaction_id = transaction['TransactionID']
-		transactions_dict[transaction_id] = transaction
+        global transactions_dict
+        with open('data_features_rf.json', 'r') as f:
+                transactions = json.load(f)
+        for transaction in transactions:
+                transaction_id = transaction['TransactionID']
+                transactions_dict[transaction_id] = transaction
 
 load_transactions()
 @app.get("/transaction/{transaction_id}")
 def get_transaction(transaction_id: int):
-	time.sleep(random.randint(120,150)/1000)
-	transaction = transactions_dict.get(transaction_id)
-	if transaction:
-		return transaction
-	else:
-		raise HTTPException(status_code=404, detail="Transaction not found")
+        time.sleep(random.randint(120,150)/1000)
+        transaction = transactions_dict.get(transaction_id)
+        if transaction:
+                return transaction
+        else:
+                raise HTTPException(status_code=404, detail="Transaction not found")
 
 #@app.get("/transaction/{transaction_id}")
 #def get_transaction(transaction_id: int):
