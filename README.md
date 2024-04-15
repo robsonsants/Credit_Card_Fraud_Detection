@@ -22,11 +22,12 @@ In this context, this project aims to develop an API capable of detecting anomal
 
 ## Machine Learning Architecture
 
-![ml_2](https://github.com/robsonsants/Credit_Card_Fraud_Detection/assets/32533017/1f17fb2d-f36f-4396-a74a-0b4148417842)
+![ml_1](https://github.com/robsonsants/Credit_Card_Fraud_Detection/assets/32533017/b692f925-9fae-49e2-8eb1-73f2be149d5e)
+
 
 ## Project Architecture
 
-![ap1_vesta](https://github.com/robsonsants/Credit_Card_Fraud_Detection/assets/32533017/ff1a70b4-9bde-4538-8e7e-c10492d2a496)
+![fraud_detecccct](https://github.com/robsonsants/Credit_Card_Fraud_Detection/assets/32533017/c1b7cfae-3943-4160-8e2b-43cf5403f046)
 
 ## Project steps
 
