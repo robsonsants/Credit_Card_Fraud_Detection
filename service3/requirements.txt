@@ -13,3 +13,4 @@ sqlalchemy==1.4.23
 psycopg2
 pymongo
 requests
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
