@@ -12,3 +12,4 @@ pydantic==1.9.1
 httptools
 pymongo
 xgboost==1.5.2
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
